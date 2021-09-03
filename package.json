@@ -19,12 +19,17 @@
   },
   "lint-staged": {
     "*.@(ts|tsx)": [
-      "yarn lint",
-      "yarn format"
+      "yarn eslint . --ext ts --ext tsx --ext js",
+      "yarn prettier --write ."
     ]
   },
   "dependencies": {
+    "@chakra-ui/react": "^1.6.7",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "framer-motion": "^4",
     "next": "latest",
+    "next-seo": "^4.26.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
