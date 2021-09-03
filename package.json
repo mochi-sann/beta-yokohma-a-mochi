@@ -19,8 +19,8 @@
   },
   "lint-staged": {
     "*.@(ts|tsx)": [
-      "yarn lint",
-      "yarn format"
+      "yarn eslint . --ext ts --ext tsx --ext js",
+      "yarn prettier --write ."
     ]
   },
   "dependencies": {
