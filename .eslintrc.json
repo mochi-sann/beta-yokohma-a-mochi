@@ -1,6 +1,6 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "import"],
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
@@ -9,6 +9,7 @@
     // Is not enabled right now to avoid issues with the Next.js repo
     // "prettier",
   ],
+
   "env": {
     "es6": true,
     "browser": true,
