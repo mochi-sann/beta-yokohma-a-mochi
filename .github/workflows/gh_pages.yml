@@ -36,13 +36,16 @@ jobs:
       # プロジェクトルート直下に.nextディレクトリができる
       - name: build
         run: yarn run build
+        env:
+          GITHUB_PAGES: true
 
       # 静的なHTMLとしてNext.jsアプリを生成する
       # プロジェクトルート直下にoutディレクトリができる
       # そのなかに、HTMLファイル群と、それらが読み込むJSファイル群を収めた_nextディレクトリがある
       - name: export
         run: yarn run export
-
+        env:
+          GITHUB_PAGES: true
       # しかしGitHub Pagesの仕様として_から始まるディレクトリが見えず404となる
       # つまりHTMLからJSを読み込めない
       # これを回避するために.nojekyllファイルをoutディレクトリに作る
