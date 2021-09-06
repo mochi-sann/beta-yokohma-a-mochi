@@ -1,7 +1,8 @@
 import React from 'react'
-import { Flex, Spacer, Heading } from '@chakra-ui/react'
 
-const Heder: React.VFC = () => {
+import { Flex, Heading, Spacer } from '@chakra-ui/react'
+
+const Header: React.VFC = () => {
   return (
     <Flex p="1">
       <Heading>たいとる</Heading>
@@ -11,4 +12,4 @@ const Heder: React.VFC = () => {
   )
 }
 
-export default Heder
+export default Header
