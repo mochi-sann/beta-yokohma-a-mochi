@@ -13,5 +13,10 @@ const Template: Story<Props> = (args) => <Problems {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-  correctList: ['hoge', 'fuga'],
+  correctList: [
+    {
+      correct: '제목1',
+      type: 'text',
+    },
+  ],
 }
