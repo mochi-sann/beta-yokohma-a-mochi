@@ -10,6 +10,7 @@ export const Home: React.VFC = () => {
       <p>がぞうわ</p>
       <Button
         colorScheme="gray"
+        w="full"
         onClick={() => {
           handleClick({ isCorrect: true, NotShowToast: true })
         }}

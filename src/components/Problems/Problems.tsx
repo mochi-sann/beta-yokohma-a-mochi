@@ -52,6 +52,7 @@ const Problems: React.VFC<Props> = (props) => {
         ))}
 
         <Button
+          w="full"
           mt={4}
           colorScheme="teal"
           isLoading={isSubmitting}
