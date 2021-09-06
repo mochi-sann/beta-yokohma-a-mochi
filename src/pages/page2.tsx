@@ -4,8 +4,9 @@ import Problems from '~/src/components/Problems/Problems'
 export const Home: React.VFC = () => {
   return (
     <div>
+      <p>2もんめ</p>
       <Problems
-        nextPage="/page1"
+        nextPage="/page3"
         correctList={[
           {
             title: 'タイトル1',
@@ -14,12 +15,12 @@ export const Home: React.VFC = () => {
           },
           {
             title: 'タイトル2',
-            correctText: 'iii',
+            correctText: 'aaa',
             type: 'text',
           },
           {
             title: 'タイトル1',
-            correctText: 'uuu',
+            correctText: 'aaa',
             type: 'text',
           },
         ]}
