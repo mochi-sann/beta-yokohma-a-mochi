@@ -1,6 +1,8 @@
 import { useForm } from 'react-hook-form'
 import React from 'react'
 import { FormLabel, FormControl, Input, Button } from '@chakra-ui/react'
+import { validationJudgment } from '~/src/lib/validationJudgment'
+import useNextPage from '~/src/hooks/useNextPage'
 
 export type Props = {
   correctList: { title: string; correctText: string; type: 'text' }[]
@@ -17,8 +19,17 @@ const Problems: React.VFC<Props> = (props) => {
     formState: { isSubmitting },
   } = useForm<Inputs>()
 
-  function onSubmit(values) {
-    console.log(values)
+  const { handleClick } = useNextPage({ nextPage: '/page1' })
+
+  function onSubmit(values: Inputs) {
+    console.log(values.name)
+    console.log(props.correctList)
+    handleClick({
+      isCorrect: validationJudgment({
+        CollectList: props.correctList,
+        FormList: values.name,
+      }),
+    })
   }
 
   return (

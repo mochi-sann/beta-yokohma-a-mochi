@@ -5,17 +5,17 @@ describe('問題があっていればtrue 間違っていればfalseを返す', 
       validationJudgment({
         CollectList: [
           {
-            correct: 'せいかいせいかい',
+            correctText: 'せいかいせいかい',
             type: 'text',
             title: 'タイトルタイトル',
           },
           {
-            correct: 'せいかいせいかい',
+            correctText: 'せいかいせいかい',
             type: 'text',
             title: 'タイトルタイトル',
           },
           {
-            correct: 'せいかいせいかい',
+            correctText: 'せいかいせいかい',
             type: 'text',
             title: 'タイトルタイトル',
           },
@@ -29,17 +29,17 @@ describe('問題があっていればtrue 間違っていればfalseを返す', 
       validationJudgment({
         CollectList: [
           {
-            correct: 'せいかいせいかい',
+            correctText: 'せいかいせいかい',
             type: 'text',
             title: 'タイトルタイトル',
           },
           {
-            correct: 'せいかいせいかい',
+            correctText: 'せいかいせいかい',
             type: 'text',
             title: 'タイトルタイトル',
           },
           {
-            correct: 'せいかいせいかい',
+            correctText: 'せいかいせいかい',
             type: 'text',
             title: 'タイトルタイトル',
           },
@@ -53,62 +53,62 @@ describe('問題があっていればtrue 間違っていればfalseを返す', 
       validationJudgment({
         CollectList: [
           {
-            correct: 'せいかいせいかい',
+            correctText: 'せいかいせいかい',
             type: 'text',
             title: 'タイトルタイトル',
           },
           {
-            correct: 'せいかいせいかい',
+            correctText: 'せいかいせいかい',
             type: 'text',
             title: 'タイトルタイトル',
           },
           {
-            correct: 'せいかいせいかい',
+            correctText: 'せいかいせいかい',
             type: 'text',
             title: 'タイトルタイトル',
           },
           {
-            correct: 'せいかいせいかい',
+            correctText: 'せいかいせいかい',
             type: 'text',
             title: 'タイトルタイトル',
           },
           {
-            correct: 'せいかいせいかい',
+            correctText: 'せいかいせいかい',
             type: 'text',
             title: 'タイトルタイトル',
           },
           {
-            correct: 'せいかいせいかい',
+            correctText: 'せいかいせいかい',
             type: 'text',
             title: 'タイトルタイトル',
           },
           {
-            correct: 'せいかいせいかい',
+            correctText: 'せいかいせいかい',
             type: 'text',
             title: 'タイトルタイトル',
           },
           {
-            correct: 'せいかいせいかい',
+            correctText: 'せいかいせいかい',
             type: 'text',
             title: 'タイトルタイトル',
           },
           {
-            correct: 'せいかいせいかい',
+            correctText: 'せいかいせいかい',
             type: 'text',
             title: 'タイトルタイトル',
           },
           {
-            correct: 'せいかいせいかい',
+            correctText: 'せいかいせいかい',
             type: 'text',
             title: 'タイトルタイトル',
           },
           {
-            correct: 'せいかいせいかい',
+            correctText: 'せいかいせいかい',
             type: 'text',
             title: 'タイトルタイトル',
           },
           {
-            correct: 'せいかいせいかい',
+            correctText: 'せいかいせいかい',
             type: 'text',
             title: 'タイトルタイトル',
           },

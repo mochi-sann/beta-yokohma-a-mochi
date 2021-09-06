@@ -1,6 +1,6 @@
 // 配列で来たものが正しいかどうかをはんていする
 type ValidationJudgment = {
-  CollectList: { title: string; correct: string; type: 'text' }[]
+  CollectList: { title: string; correctText: string; type: 'text' }[]
   FormList: string[]
 }
 export const validationJudgment = ({
@@ -8,8 +8,8 @@ export const validationJudgment = ({
   FormList,
 }: ValidationJudgment): boolean => {
   const List = CollectList.map((CollectList) => {
-    const { correct } = CollectList
-    return correct
+    const { correctText } = CollectList
+    return correctText
   })
 
   if (JSON.stringify(List) == JSON.stringify(FormList)) {
