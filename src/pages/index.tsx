@@ -7,7 +7,7 @@ export const Home: React.VFC = () => {
   const { handleClick } = useNextPage({ nextPage: '/page1' })
   return (
     <div>
-      <p>がぞう</p>
+      <p>がぞうわ</p>
       <Button
         colorScheme="gray"
         onClick={() => {
