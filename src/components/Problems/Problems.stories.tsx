@@ -13,10 +13,22 @@ const Template: Story<Props> = (args) => <Problems {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
+  Done: () => console.log('Done'),
   correctList: [
     {
-      correct: '제목1',
+      correct: 'せいかいせいかい',
       type: 'text',
+      title: 'タイトルタイトル',
+    },
+    {
+      correct: 'せいかいせいかい',
+      type: 'text',
+      title: 'タイトルタイトル',
+    },
+    {
+      correct: 'せいかいせいかい',
+      type: 'text',
+      title: 'タイトルタイトル',
     },
   ],
 }

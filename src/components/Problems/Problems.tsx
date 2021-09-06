@@ -1,50 +1,44 @@
 import { useForm } from 'react-hook-form'
 import React from 'react'
-import {
-  FormErrorMessage,
-  FormLabel,
-  FormControl,
-  Input,
-  Button,
-} from '@chakra-ui/react'
+import { FormLabel, FormControl, Input, Button } from '@chakra-ui/react'
 
 export type Props = {
-  correctList: { correct: string; type: 'text' }[]
+  correctList: { title: string; correctText: string; type: 'text' }[]
   Done: () => void
+}
+type Inputs = {
+  name: string[]
 }
 
 const Problems: React.VFC<Props> = (props) => {
   const {
     handleSubmit,
     register,
-    formState: { errors, isSubmitting },
-  } = useForm()
+    formState: { isSubmitting },
+  } = useForm<Inputs>()
 
   function onSubmit(values) {
-    return new Promise(() => {
-      setTimeout(() => {
-        alert(JSON.stringify(values, null, 2))
-      }, 3000)
-    })
+    console.log(values)
   }
 
   return (
     <div>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <FormControl isInvalid={errors.name}>
-          <FormLabel htmlFor="name">First name</FormLabel>
-          <Input
-            id="name"
-            placeholder="name"
-            {...register('name', {
-              required: 'This is required',
-              minLength: { value: 4, message: 'Minimum length should be 4' },
-            })}
-          />
-          <FormErrorMessage>
-            {errors.name && errors.name.message}
-          </FormErrorMessage>
-        </FormControl>
+        {props.correctList.map((correct, key) => (
+          <FormControl key={key}>
+            <FormLabel htmlFor="name" fontWeight="800">
+              {correct.title}
+            </FormLabel>
+            <Input
+              id={`name.${key}`}
+              placeholder={correct.title}
+              {...register(`name.${key}`, {
+                required: '入力されていません',
+              })}
+            />
+          </FormControl>
+        ))}
+
         <Button
           mt={4}
           colorScheme="teal"
