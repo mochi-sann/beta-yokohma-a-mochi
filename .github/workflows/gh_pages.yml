@@ -37,7 +37,7 @@ jobs:
       - name: build
         run: yarn run build
         env:
-          BASE_PATH: https://mochi-sann.github.io/beta-yokohma-a-mochi/
+          BASE_PATH: /beta-yokohma-a-mochi/
 
       # 静的なHTMLとしてNext.jsアプリを生成する
       # プロジェクトルート直下にoutディレクトリができる
@@ -45,7 +45,7 @@ jobs:
       - name: export
         run: yarn run export
         env:
-          BASE_PATH: https://mochi-sann.github.io/beta-yokohma-a-mochi/
+          BASE_PATH: /beta-yokohma-a-mochi/
       # しかしGitHub Pagesの仕様として_から始まるディレクトリが見えず404となる
       # つまりHTMLからJSを読み込めない
       # これを回避するために.nojekyllファイルをoutディレクトリに作る
