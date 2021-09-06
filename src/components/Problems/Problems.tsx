@@ -6,7 +6,8 @@ import useNextPage from '~/src/hooks/useNextPage'
 
 export type Props = {
   correctList: { title: string; correctText: string; type: 'text' }[]
-  Done: () => void
+  Done?: () => void
+  nextPage?: string
 }
 type Inputs = {
   name: string[]
@@ -19,7 +20,7 @@ const Problems: React.VFC<Props> = (props) => {
     formState: { isSubmitting },
   } = useForm<Inputs>()
 
-  const { handleClick } = useNextPage({ nextPage: '/page1' })
+  const { handleClick } = useNextPage({ nextPage: props.nextPage || '/page1' })
 
   function onSubmit(values: Inputs) {
     console.log(values.name)

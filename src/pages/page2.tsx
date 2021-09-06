@@ -5,7 +5,7 @@ export const Home: React.VFC = () => {
   return (
     <div>
       <Problems
-        nextPage="/page2"
+        nextPage="/page1"
         correctList={[
           {
             title: 'タイトル1',
@@ -14,12 +14,12 @@ export const Home: React.VFC = () => {
           },
           {
             title: 'タイトル2',
-            correctText: 'aaa',
+            correctText: 'iii',
             type: 'text',
           },
           {
             title: 'タイトル1',
-            correctText: 'aaa',
+            correctText: 'uuu',
             type: 'text',
           },
         ]}
