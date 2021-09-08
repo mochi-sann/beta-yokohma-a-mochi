@@ -45,7 +45,6 @@ const Layout: React.VFC<Props> = (props) => {
           </Head>
           <NextSeo
             title="奴らのいる工場から脱出 | プロジェクトN"
-            description="A short description goes here."
             canonical="https://mochi-sann.github.io/beta-yokohma-a-mochi/"
             openGraph={{
               url: 'https://mochi-sann.github.io/beta-yokohma-a-mochi/',
