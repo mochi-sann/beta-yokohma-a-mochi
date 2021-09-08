@@ -46,6 +46,20 @@ const Layout: React.VFC<Props> = (props) => {
           <NextSeo
             title="奴らのいる工場から脱出 | プロジェクトN"
             description="A short description goes here."
+            canonical="https://mochi-sann.github.io/beta-yokohma-a-mochi/"
+            openGraph={{
+              url: 'https://mochi-sann.github.io/beta-yokohma-a-mochi/',
+              title: '奴らのいる工場から脱出 | プロジェクトN',
+              images: [
+                {
+                  url: 'https://mochi-sann.github.io/beta-yokohma-a-mochi/ogp/Titleimg.png',
+                  alt: 'タイトル画像',
+                },
+              ],
+            }}
+            twitter={{
+              cardType: 'summary_large_image',
+            }}
           />
           {props.children}
         </Container>

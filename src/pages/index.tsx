@@ -1,12 +1,13 @@
 import React from 'react'
 
 import useNextPage from '../hooks/useNextPage'
-import { Button } from '@chakra-ui/react'
+import { Button, Image } from '@chakra-ui/react'
 
 export const Home: React.VFC = () => {
   const { handleClick } = useNextPage({ nextPage: '/page1' })
   return (
     <div>
+      <Image src="/ogp/Titleimg.png" mt="2" borderRadius="0.5em" />
       <p>がぞうわ</p>
       <Button
         colorScheme="gray"
