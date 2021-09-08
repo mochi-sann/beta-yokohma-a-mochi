@@ -2,7 +2,7 @@ import { NextSeo } from 'next-seo'
 import Head from 'next/head'
 import React from 'react'
 import Fotter from '~/src/components/Fotter'
-import { Container, SlideFade } from '@chakra-ui/react'
+import { Container, SlideFade, Box } from '@chakra-ui/react'
 
 import Header from './Header'
 
@@ -11,10 +11,10 @@ export type Props = {
 }
 const Layout: React.VFC<Props> = (props) => {
   return (
-    <>
+    <Box minHeight="100vh">
       <Header />
       <SlideFade in offsetY="20px">
-        <Container maxW="900px">
+        <Container maxW="900px" minHeight="calc(100vh - 57px - 252px - 18px)">
           <Head>
             <link rel="shortcut icon" href="/icon.png" type="image/x-icon" />
             <link
@@ -50,8 +50,8 @@ const Layout: React.VFC<Props> = (props) => {
           {props.children}
         </Container>
       </SlideFade>
-      <Fotter />
-    </>
+      <Fotter mt="4" />
+    </Box>
   )
 }
 

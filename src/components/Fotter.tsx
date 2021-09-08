@@ -1,9 +1,9 @@
 import React from 'react'
-import { Box, Text } from '@chakra-ui/react'
+import { Box, Text, BoxProps } from '@chakra-ui/react'
 
-const Fotter: React.VFC = () => {
+const Fotter: React.VFC<BoxProps> = (props) => {
   return (
-    <Box bg="gray.200" mt="4" fontWeight="800">
+    <Box bg="gray.200" fontWeight="800" mt="auto" {...props}>
       <Box py="4" className="text-center">
         <Text textAlign="center">
           授業主催： N・S高
