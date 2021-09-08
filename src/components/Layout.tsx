@@ -1,7 +1,7 @@
 import { NextSeo } from 'next-seo'
 import Head from 'next/head'
 import React from 'react'
-
+import Fotter from '~/src/components/Fotter'
 import { Container, SlideFade } from '@chakra-ui/react'
 
 import Header from './Header'
@@ -50,6 +50,7 @@ const Layout: React.VFC<Props> = (props) => {
           {props.children}
         </Container>
       </SlideFade>
+      <Fotter />
     </>
   )
 }
