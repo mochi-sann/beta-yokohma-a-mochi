@@ -19,13 +19,13 @@ export type Props = {
 
 const HintList: React.VFC<Props> = (props) => {
   return (
-    <Box p="4" mb="2" bg="gray.100" rounded="md">
+    <Box p="4" mb="2" bg="gray.100" rounded="lg">
       <Heading p="2" py="4">
         {props.HintTitle || 'ヒント'}
       </Heading>
       <Accordion defaultIndex={[0]} allowMultiple>
         {props.HintLists.map((hint, index) => (
-          <AccordionItem key={index}>
+          <AccordionItem borderColor="gray.400" key={index}>
             <h2>
               <AccordionButton>
                 <Box flex="1" textAlign="left">

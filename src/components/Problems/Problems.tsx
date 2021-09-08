@@ -61,11 +61,6 @@ const Problems: React.VFC<Props> = (props) => {
           Submit
         </Button>
       </form>
-
-      <p>hogehoge</p>
-      {props.correctList.map((correct, index) => (
-        <p key={index}>{JSON.stringify(correct)}</p>
-      ))}
     </div>
   )
 }
