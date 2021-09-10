@@ -1,12 +1,12 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
-
+import { theme } from '~/src/lib/extendTheme'
 import Layout from '../components/Layout'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <Layout>
         <Head>
           <meta
