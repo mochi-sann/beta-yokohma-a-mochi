@@ -1,6 +1,6 @@
 import React from 'react'
 
-import useNextPage from '../hooks/useNextPage'
+import useNextPage from '~/src/hooks/useNextPage'
 import { Button, Text, Img } from '@chakra-ui/react'
 import MainCard from '../components/MainCard'
 import BodyHeding from '../components/BodyHeding'
@@ -34,7 +34,7 @@ export const Home: React.VFC = () => {
       />
       <Button
         mt="2"
-        colorScheme="gray"
+        variant="black"
         w="full"
         onClick={() => {
           handleClick({ isCorrect: true, NotShowToast: true })

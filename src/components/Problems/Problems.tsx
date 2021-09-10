@@ -52,6 +52,7 @@ const Problems: React.VFC<Props> = (props) => {
         ))}
 
         <Button
+          variant="black"
           w="full"
           mt={4}
           colorScheme="blue"

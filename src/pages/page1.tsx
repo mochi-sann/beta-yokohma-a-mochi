@@ -14,7 +14,7 @@ export const Home: React.VFC = () => {
         困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。
       </Text>
       <Problems
-        nextPage="/page2"
+        nextPage="/stage_clear/1"
         correctList={[
           {
             title: 'タイトル1',

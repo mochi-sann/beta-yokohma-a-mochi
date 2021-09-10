@@ -11,4 +11,14 @@ const Image = {
     borderRadius: 'base',
   },
 }
-export const theme = extendTheme({ components: { Text, Image } })
+const Button = {
+  variants: {
+    black: {
+      bg: 'black',
+      color: 'white',
+      _hover: { bg: 'gray.800' },
+    },
+  },
+}
+export const theme = extendTheme({ components: { Text, Image, Button } })
+// console.log(theme)

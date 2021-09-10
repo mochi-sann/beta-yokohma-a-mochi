@@ -13,7 +13,9 @@ type handleClickProps = {
   nextPagePath?: string
 }
 
-const useNextpage = (props: Props) => {
+const useNextpage = (
+  props: Props
+): { handleClick: (props: handleClickProps) => void } => {
   const router = useRouter()
   const toast = useToast()
   const { nextPage } = props

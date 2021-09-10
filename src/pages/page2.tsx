@@ -1,26 +1,23 @@
+import { Text } from '@chakra-ui/layout'
 import React from 'react'
 import Problems from '~/src/components/Problems/Problems'
 
 export const Home: React.VFC = () => {
   return (
     <div>
-      <p>2もんめ</p>
+      <Text>
+        STAGE:2 ドアの鍵を開けよう
+        次の部屋に行く前に、パスワードを入れないと開かないドアがある!
+        ドアを開け、出口に向かおう!
+        下の画像の謎を解き、鍵のパスワードをキーワード欄に入力しよう。
+        困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。
+      </Text>{' '}
       <Problems
-        nextPage="/page3"
+        nextPage="/stage_clear/2"
         correctList={[
           {
-            title: 'タイトル1',
-            correctText: 'aaa',
-            type: 'text',
-          },
-          {
-            title: 'タイトル2',
-            correctText: 'aaa',
-            type: 'text',
-          },
-          {
-            title: 'タイトル1',
-            correctText: 'aaa',
+            title: 'パスワード',
+            correctText: '納豆菌',
             type: 'text',
           },
         ]}
