@@ -6,7 +6,7 @@ export type Props = {
 
 const MainCard: React.VFC<Props> = (props) => {
   return (
-    <Flex py="2" style={{ gap: '0.5em' }}>
+    <Flex py="2" css={{ gap: '.5rem' }}>
       {props.list.map((item) => (
         <Box key={item.title} borderWidth="2px" p="2" w="full" rounded="md">
           <Heading as="h3" size="lg">
