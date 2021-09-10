@@ -54,11 +54,11 @@ const Problems: React.VFC<Props> = (props) => {
         <Button
           w="full"
           mt={4}
-          colorScheme="teal"
+          colorScheme="blue"
           isLoading={isSubmitting}
           type="submit"
         >
-          Submit
+          送信
         </Button>
       </form>
     </div>
