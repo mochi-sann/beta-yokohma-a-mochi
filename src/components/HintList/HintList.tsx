@@ -24,9 +24,9 @@ const HintList: React.VFC<Props> = (props) => {
         <Heading p="2" py="4">
           {props.HintTitle || 'ヒント'}
         </Heading>
-        <Accordion defaultIndex={[0]} allowMultiple>
-          {props.HintLists.map((hint, index) => (
-            <AccordionItem borderColor="gray.400" key={index}>
+        <Accordion allowMultiple>
+          {props.HintLists.map((hint) => (
+            <AccordionItem borderColor="gray.400" key={hint.title}>
               <h2>
                 <AccordionButton>
                   <Box flex="1" textAlign="left">
