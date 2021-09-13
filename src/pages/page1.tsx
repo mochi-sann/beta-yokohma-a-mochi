@@ -32,7 +32,7 @@ export const Home: React.VFC = () => {
           },
           {
             title: 'ヒント2',
-            body: <Text>これからついか</Text>,
+            body: <Text>右上には「あ」、左上には「ん」が入るよ</Text>,
           },
           {
             title: 'ヒント3',

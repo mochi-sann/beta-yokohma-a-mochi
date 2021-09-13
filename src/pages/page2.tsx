@@ -2,7 +2,7 @@ import { Text } from '@chakra-ui/layout'
 import React from 'react'
 import Problems from '~/src/components/Problems/Problems'
 import CurrentLocationMap from '../components/CurrentLocationMap'
-
+import HintList from '~/src/components/HintList'
 export const Home: React.VFC = () => {
   return (
     <div>
@@ -21,6 +21,18 @@ export const Home: React.VFC = () => {
             title: 'パスワード',
             correctText: '納豆菌',
             type: 'text',
+          },
+        ]}
+      />
+      <HintList
+        HintLists={[
+          {
+            title: 'ヒント1',
+            body: '国②の謎は時計回りを意識してみよう',
+          },
+          {
+            title: 'ヒント2',
+            body: '納豆に関係しているよ',
           },
         ]}
       />
