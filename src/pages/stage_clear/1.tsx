@@ -1,4 +1,6 @@
+import { Img } from '@chakra-ui/image'
 import { Box, Text } from '@chakra-ui/layout'
+import { Heading } from '@chakra-ui/react'
 import React from 'react'
 
 import StageClearNextPageButton from '~/src/components/stageClearNextPageButton'
@@ -15,6 +17,8 @@ export const Home: React.VFC = () => {
           <br />
           出口に向かおう!
         </Text>
+        <Heading>工場の地図</Heading>
+        <Img src="/StageAssets/image2.png" />
       </Box>
       <StageClearNextPageButton Nextpath="/page2" />
     </div>

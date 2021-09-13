@@ -1,7 +1,8 @@
 import { Text } from '@chakra-ui/layout'
 import React from 'react'
 import Problems from '~/src/components/Problems/Problems'
-
+import CurrentLocationMap from '../components/CurrentLocationMap'
+import HintList from '~/src/components/HintList'
 export const Home: React.VFC = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ export const Home: React.VFC = () => {
         下の画像の謎を解き、鍵のパスワードをキーワード欄に入力しよう。
         困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。
       </Text>{' '}
+      <CurrentLocationMap img="/StageAssets/mapList/無題のプレゼンテーション_page-0002.jpg" />
       <Problems
         nextPage="/stage_clear/2"
         correctList={[
@@ -19,6 +21,18 @@ export const Home: React.VFC = () => {
             title: 'パスワード',
             correctText: '納豆菌',
             type: 'text',
+          },
+        ]}
+      />
+      <HintList
+        HintLists={[
+          {
+            title: 'ヒント1',
+            body: '国②の謎は時計回りを意識してみよう',
+          },
+          {
+            title: 'ヒント2',
+            body: '納豆に関係しているよ',
           },
         ]}
       />

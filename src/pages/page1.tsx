@@ -3,6 +3,7 @@ import Problems from '~/src/components/Problems/Problems'
 import HintList from '~/src/components/HintList'
 import BodyHeding from '../components/BodyHeding'
 import { Text } from '@chakra-ui/layout'
+
 export const Home: React.VFC = () => {
   return (
     <div>
@@ -26,12 +27,8 @@ export const Home: React.VFC = () => {
       <HintList
         HintLists={[
           {
-            title: 'ひんと1',
-            body: 'ヒントの文章!!!!!!!!!!!!!!!!!!!!!!!!!!!!!',
-          },
-          {
-            title: 'ひんと2',
-            body: 'ヒントの文章!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!',
+            title: 'ヒント1',
+            body: '国語の教科書で、全員一度は見たことがある図形だよ！',
           },
         ]}
       />
