@@ -12,7 +12,7 @@ import {
 export type Props = {
   HintLists: {
     title: string
-    body: string
+    body: string | React.ReactNode
   }[]
   HintTitle?: string
 }
