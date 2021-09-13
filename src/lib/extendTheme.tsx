@@ -16,7 +16,7 @@ const Button = {
     black: {
       bg: 'black',
       color: 'white',
-      _hover: { bg: 'gray.800' },
+      _hover: { bg: 'gray.900' },
     },
   },
 }

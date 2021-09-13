@@ -19,8 +19,44 @@ describe('問題があっていればtrue 間違っていればfalseを返す', 
             type: 'text',
             title: 'タイトルタイトル',
           },
+          {
+            correctText: 'せいかいせいかい',
+            type: 'text',
+            title: 'タイトルタイトル',
+          },
+          {
+            correctText: 'せいかいせいかい',
+            type: 'text',
+            title: 'タイトルタイトル',
+          },
+          {
+            correctText: 'せいかいせいかい',
+            type: 'text',
+            title: 'タイトルタイトル',
+          },
         ],
-        FormList: ['せいかいせいかい', 'せいかいせいかい', 'せいかいせいかい'],
+        FormList: [
+          'せいかいせいかい',
+          'せいかいせいかい',
+          'せいかいせいかい',
+          'せいかいせいかい',
+          'せいかいせいかい',
+          'せいかいせいかい',
+        ],
+      })
+    ).toBe(true)
+  })
+  test('あっている3', () => {
+    expect(
+      validationJudgment({
+        CollectList: [
+          {
+            correctText: '111111111111111111111111111111111111111111111111',
+            type: 'text',
+            title: 'タイトルタイトル',
+          },
+        ],
+        FormList: ['111111111111111111111111111111111111111111111111'],
       })
     ).toBe(true)
   })

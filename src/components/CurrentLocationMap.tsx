@@ -9,6 +9,7 @@ import {
   useDisclosure,
   Image,
 } from '@chakra-ui/react'
+import { FaMapMarkedAlt } from 'react-icons/fa'
 
 export type Props = {
   img: string
@@ -20,7 +21,14 @@ const CurrentLocationMap: React.VFC<Props> = (props) => {
 
   return (
     <div>
-      <Button ref={btnRef} colorScheme="teal" onClick={onOpen} w="full" mt="2">
+      <Button
+        ref={btnRef}
+        colorScheme="teal"
+        onClick={onOpen}
+        w="full"
+        mt="2"
+        leftIcon={<FaMapMarkedAlt />}
+      >
         地図を見る
       </Button>
       <Drawer
