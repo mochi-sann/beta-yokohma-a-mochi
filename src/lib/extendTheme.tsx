@@ -4,6 +4,8 @@ const Text = {
   baseStyle: {
     color: 'black',
     lineHeight: '1.7',
+    fontWeight: '500',
+    fontFamily: `'M PLUS 1p', sans-serif`,
   },
 }
 const Image = {
