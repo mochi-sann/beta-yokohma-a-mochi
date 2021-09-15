@@ -5,6 +5,7 @@ import Fotter from '~/src/components/Fotter'
 import { Container, Box } from '@chakra-ui/react'
 
 import Header from './Header'
+import ImagePath from '../lib/ImagePath'
 
 export type Props = {
   children: React.ReactNode
@@ -16,26 +17,34 @@ const Layout: React.VFC<Props> = (props) => {
 
       <Container maxW="900px" minHeight="calc(100vh - 57px - 252px - 18px)">
         <Head>
-          <link rel="shortcut icon" href="/icon.png" type="image/x-icon" />
+          <link
+            rel="shortcut icon"
+            href={ImagePath('/icon.png')}
+            type="image/x-icon"
+          />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="/apple-touch-icon.png"
+            href={ImagePath('/apple-touch-icon.png')}
           />
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="/favicon-32x32.png"
+            href={ImagePath('/favicon-32x32.png')}
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="/favicon-16x16.png"
+            href={ImagePath('/favicon-16x16.png')}
           />
-          <link rel="manifest" href="/site.webmanifest" />
-          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
+          <link rel="manifest" href={ImagePath('/site.webmanifest')} />
+          <link
+            rel="mask-icon"
+            href={ImagePath('/safari-pinned-tab.svg')}
+            color="#000000"
+          />
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="theme-color" content="#ffffff" />
         </Head>
