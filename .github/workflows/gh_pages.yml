@@ -20,17 +20,30 @@ jobs:
           node-version: '14.x'
 
       # npm install の際にキャッシュを使うよう設定
-      - name: Cache dependencies
-        uses: actions/cache@v1
+      - name: cache node_modules
+        id: node_modules_cache_id
+        uses: actions/cache@v2
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          path: |
+            node_modules
+            packages/*/node_modules
+            distributions/*/node_modules
+          key: ${{ matrix.os }}-node-v${{ matrix.node }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
 
       # package.jsonに基づき依存パッケージをインストールする
       - name: install
         run: yarn install --frozen-lockfile
+
+      - name: cache workspace
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            packages/*/node_modules
+            distributions/*/node_modules
+            packages/*/dist
+          key: ${{ matrix.os }}-node-v${{ matrix.node }}-nuxt-${{ github.sha }}
+
 
       # Next.jsアプリをビルドする
       # プロジェクトルート直下に.nextディレクトリができる

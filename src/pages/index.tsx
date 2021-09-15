@@ -9,7 +9,7 @@ export const Home: React.VFC = () => {
   const { handleClick } = useNextPage({ nextPage: '/page1' })
   return (
     <div>
-      <Img src={'/ogp/Titleimg.png'} mt="2" />
+      <Img src={process.env.BASE_PATH + '/ogp/Titleimg.png'} mt="2" />
       <BodyHeding>ストーリー</BodyHeding>
       <Text py="2">
         とある小学校が納豆工場の工場見学を申し込んだ。納豆工場はより美味しい納豆を作るために、日々納豆菌の研究をしており、品種改良を行っていくうちに納豆菌がおかしな行動をとることが目撃されている。工場はその納豆菌を隠している後ろめたさがあるが、公表していないため断る理由もなく受け入れた。

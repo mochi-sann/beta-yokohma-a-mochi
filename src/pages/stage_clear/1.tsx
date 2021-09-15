@@ -18,7 +18,7 @@ export const Home: React.VFC = () => {
           出口に向かおう!
         </Text>
         <Heading>工場の地図</Heading>
-        <Img src={'/StageAssets/image2.png'} />
+        <Img src={process.env.BASE_PATH + '/StageAssets/image2.png'} />
       </Box>
       <StageClearNextPageButton Nextpath="/page2" />
     </div>
