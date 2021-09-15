@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, Image, Box } from '@chakra-ui/react'
+import { Text, Box, Img } from '@chakra-ui/react'
 import BodyHeding from './BodyHeding'
 
 export type Props = {
@@ -12,7 +12,7 @@ const howToCook: React.VFC<Props> = (props) => {
   return (
     <Box>
       <BodyHeding>{props.title}</BodyHeding>
-      <Image src={props.imagesrc} />
+      <Img src={props.imagesrc} />
       <Text>{props.body}</Text>
     </Box>
   )
