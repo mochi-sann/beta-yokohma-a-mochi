@@ -6,7 +6,7 @@
  */
 const ImagePath = (path: string, IsNotUseEnv?: boolean): string => {
   if (!IsNotUseEnv) {
-    return process.env.BASE_PATH || '' + path
+    return (process.env.BASE_PATH || '') + path
   } else {
     return path
   }
