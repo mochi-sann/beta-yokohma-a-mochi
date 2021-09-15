@@ -12,7 +12,7 @@ const howToCook: React.VFC<Props> = (props) => {
   return (
     <Box>
       <BodyHeding>{props.title}</BodyHeding>
-      <Img src={process.env.BASE_PATH + props.imagesrc} />
+      <Img src={props.imagesrc} />
       <Text>{props.body}</Text>
     </Box>
   )
