@@ -10,6 +10,7 @@ import {
   Image,
 } from '@chakra-ui/react'
 import { FaMapMarkedAlt } from 'react-icons/fa'
+import ImagePath from '../lib/ImagePath'
 
 export type Props = {
   img: string
@@ -45,7 +46,7 @@ const CurrentLocationMap: React.VFC<Props> = (props) => {
               閉じる
             </Button>
             {/* <DrawerCloseButton /> */}
-            <Image mt="4" src={process.env.BASE_PATH || '' + props.img} />
+            <Image mt="4" src={ImagePath(props.img)} />
           </DrawerBody>
 
           <DrawerFooter></DrawerFooter>
