@@ -45,7 +45,7 @@ const CurrentLocationMap: React.VFC<Props> = (props) => {
               閉じる
             </Button>
             {/* <DrawerCloseButton /> */}
-            <Image mt="4" src={process.env.BASE_PATH + props.img} />
+            <Image mt="4" src={process.env.BASE_PATH || '' + props.img} />
           </DrawerBody>
 
           <DrawerFooter></DrawerFooter>
