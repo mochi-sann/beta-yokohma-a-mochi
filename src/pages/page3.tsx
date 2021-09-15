@@ -3,16 +3,19 @@ import React from 'react'
 import Problems from '~/src/components/Problems/Problems'
 import CurrentLocationMap from '~/src/components/CurrentLocationMap'
 import HintList from '~/src/components/HintList'
+import PloblempageImg from '../components/PloblempageImg'
 
 export const Home: React.VFC = () => {
   return (
     <div>
       <Text>
         STAGE:3 追いつかれてしまった、最終手段だ!
+        <PloblempageImg img="/StageAssets/stage3/image16.png" />
         地図に絶対押してはいけないって書いてあるけど、もう押すしかない!
         下の画像の謎を解き、答えをキーワード欄に入力し、ボタンを押そう!
         困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。
-      </Text>
+      </Text>{' '}
+      <PloblempageImg img="/StageAssets/stage3/image8.png" />
       <CurrentLocationMap img="/StageAssets/mapList/無題のプレゼンテーション_page-0003.jpg" />
       <Problems
         nextPage="/fainal"
@@ -32,7 +35,7 @@ export const Home: React.VFC = () => {
           },
           {
             title: 'ヒント2',
-            body: 'K以外は1つづつしか使わないよ',
+            body: <PloblempageImg img="/StageAssets/stage3/image4.png" />,
           },
         ]}
       />

@@ -3,16 +3,19 @@ import React from 'react'
 import Problems from '~/src/components/Problems/Problems'
 import CurrentLocationMap from '../components/CurrentLocationMap'
 import HintList from '~/src/components/HintList'
+import PloblempageImg from '../components/PloblempageImg'
 export const Home: React.VFC = () => {
   return (
     <div>
       <Text>
         STAGE:2 ドアの鍵を開けよう
-        次の部屋に行く前に、パスワードを入れないと開かないドアがある!
-        ドアを開け、出口に向かおう!
+        次の部屋に行く前に、パスワードを入れないと開かないドアがある！
+        ドアを開け、出口に向かおう！
         下の画像の謎を解き、鍵のパスワードをキーワード欄に入力しよう。
         困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。
       </Text>{' '}
+      <PloblempageImg img="/StageAssets/stage2/image12.png" />
+      <PloblempageImg img="/StageAssets/stage2/image19.png" />
       <CurrentLocationMap img="/StageAssets/mapList/無題のプレゼンテーション_page-0002.jpg" />
       <Problems
         nextPage="/stage_clear/2"

@@ -44,7 +44,6 @@ jobs:
             packages/*/dist
           key: ${{ matrix.os }}-node-v${{ matrix.node }}-nuxt-${{ github.sha }}
 
-
       # Next.jsアプリをビルドする
       # プロジェクトルート直下に.nextディレクトリができる
       - name: build

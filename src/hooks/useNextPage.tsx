@@ -25,10 +25,8 @@ const useNextpage = (
       if (!props.NotShowToast) {
         // toastを表示しない
         toast({
-          title: props.CorrecttoastTitle || '正解です次の問題に行きましょう',
-          description:
-            props.CorrecttoastBody ||
-            'You have successfully completed this page',
+          title: props.CorrecttoastTitle || '正解です!!!!!!!',
+          description: props.CorrecttoastBody || null,
           status: 'success',
           duration: 3000,
           isClosable: true,

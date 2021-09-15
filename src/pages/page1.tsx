@@ -3,7 +3,7 @@ import Problems from '~/src/components/Problems/Problems'
 import HintList from '~/src/components/HintList'
 import BodyHeding from '../components/BodyHeding'
 import { Text } from '@chakra-ui/layout'
-
+import PloblempageImg from '../components/PloblempageImg'
 export const Home: React.VFC = () => {
   return (
     <div>
@@ -14,6 +14,7 @@ export const Home: React.VFC = () => {
         下の画像の謎を解き、パスワードをキーワード欄に入力しよう。
         困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。
       </Text>
+      <PloblempageImg img="/StageAssets/stage1/image1.png" />
       <Problems
         nextPage="/stage_clear/1"
         correctList={[
