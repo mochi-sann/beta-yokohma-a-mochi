@@ -15,7 +15,7 @@ export const Home: React.VFC = () => {
         下の画像の謎を解き、答えをキーワード欄に入力し、ボタンを押そう!
         困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。
       </Text>{' '}
-      <PloblempageImg img="/StageAssets/stage3/image8.png" />
+      <PloblempageImg img="/StageAssets/stage3/newMeiro.png" />
       <CurrentLocationMap img="/StageAssets/mapList/無題のプレゼンテーション_page-0003.jpg" />
       <Problems
         nextPage="/fainal"
