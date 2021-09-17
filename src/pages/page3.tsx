@@ -21,7 +21,7 @@ export const Home: React.VFC = () => {
         nextPage="/fainal"
         correctList={[
           {
-            title: 'タイトル1',
+            title: 'ひらがなで入力してください',
             correctText: 'れいきゃく',
             type: 'text',
           },

@@ -19,7 +19,7 @@ export const Home: React.VFC = () => {
         nextPage="/stage_clear/1"
         correctList={[
           {
-            title: 'タイトル1',
+            title: 'ひらがなで入力してください',
             correctText: 'うま',
             type: 'text',
           },

@@ -21,7 +21,7 @@ export const Home: React.VFC = () => {
         nextPage="/stage_clear/2"
         correctList={[
           {
-            title: 'パスワード',
+            title: '漢字で入力してください',
             correctText: '納豆菌',
             type: 'text',
           },

@@ -5,7 +5,7 @@ const Text = {
     color: 'black',
     lineHeight: '1.7',
     fontWeight: '500',
-    fontFamily: `'M PLUS 1p', sans-serif`,
+    fontFamily: `'Noto Sans JP', sans-serif`,
   },
 }
 const Image = {

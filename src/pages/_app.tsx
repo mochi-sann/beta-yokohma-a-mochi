@@ -13,10 +13,10 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
           <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
-            crossOrigin={'true'}
+            crossOrigin="true"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
             rel="stylesheet"
           />
 
