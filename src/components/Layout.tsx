@@ -4,7 +4,7 @@ import React from 'react'
 import Fotter from '~/src/components/Fotter'
 import { Container, Box } from '@chakra-ui/react'
 
-import Header from './Header'
+// import Header from './Header'
 import ImagePath from '../lib/ImagePath'
 
 export type Props = {
@@ -13,7 +13,7 @@ export type Props = {
 const Layout: React.VFC<Props> = (props) => {
   return (
     <Box minHeight="100vh">
-      <Header />
+      {/* <Header /> */}
 
       <Container maxW="900px" minHeight="calc(100vh - 57px - 252px - 18px)">
         <Head>
