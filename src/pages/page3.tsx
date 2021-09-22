@@ -9,11 +9,12 @@ export const Home: React.VFC = () => {
   return (
     <div>
       <Text>
-        STAGE:3 追いつかれてしまった、最終手段だ!
+        STAGE:3
+        追いつか(おいつか)れてしまった、最終(さいしゅう)手段(しゅだん)だ!
         <PloblempageImg img="/StageAssets/stage3/image16.png" />
-        地図に絶対押してはいけないって書いてあるけど、もう押すしかない!
-        下の画像の謎を解き、答えをキーワード欄に入力し、ボタンを押そう!
-        困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。
+        地図に絶対(ぜったい)押し(おし)てはいけないって書いてあるけど、もう押す(おす)しかない!
+        下の画像(がぞう)の謎(なぞ)を解き(とき)、答えをキーワード欄(らん)に入力し、ボタンを押そ(おそ)う!
+        困っ(こまっ)たときは、ヒントがある。なるべく見ないようにゲームを進め(すすめ)ていこう。
       </Text>{' '}
       <PloblempageImg img="/StageAssets/stage3/newMeiro.png" />
       <CurrentLocationMap img="/StageAssets/mapList/無題のプレゼンテーション_page-0003.jpg" />

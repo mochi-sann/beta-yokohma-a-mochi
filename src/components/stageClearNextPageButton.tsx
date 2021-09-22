@@ -27,7 +27,7 @@ const stageClearNextPageButton: React.VFC<Props> = (props) => {
         variantColor="green"
         {...props}
       >
-        次のステージに移動
+        次(つぎ)のステージに移動(いどう)
       </Button>
     </>
   )

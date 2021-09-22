@@ -59,7 +59,7 @@ const Problems: React.VFC<Props> = (props) => {
           isLoading={isSubmitting}
           type="submit"
         >
-          送信
+          送信(そうしん)する
         </Button>
       </form>
     </div>
