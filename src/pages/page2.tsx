@@ -31,10 +31,16 @@ export const Home: React.VFC = () => {
         HintLists={[
           {
             title: 'ヒント1',
-            body: '国②の謎は時計回りを意識してみよう',
+            body: (
+              <PloblempageImg img="/StageAssets/stage2/kanji-yomikata.png" />
+            ),
           },
           {
             title: 'ヒント2',
+            body: '国②の謎は時計回りを意識してみよう',
+          },
+          {
+            title: 'ヒント3',
             body: '納豆に関係しているよ',
           },
         ]}
