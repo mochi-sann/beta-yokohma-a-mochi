@@ -9,7 +9,7 @@ const Header: React.VFC = () => {
         <Flex py="1">
           <NextLink href="/">
             <Heading as="a" cursor="pointer">
-              たいとる
+              {/* たいとる */}
             </Heading>
           </NextLink>
           <Spacer />
